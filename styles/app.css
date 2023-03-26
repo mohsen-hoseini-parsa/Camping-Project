@@ -1,0 +1,64 @@
+html{
+    box-sizing: border-box;
+    /* font-size: 10px; */
+    font-size: 62.5%;  /*10px*/
+}
+
+*,*:after, *:before{
+    box-sizing: initial;
+}
+
+body{
+    line-height: 1.6;
+    font-size: 1.6rem;
+    font-family: "Roboto";
+
+}
+
+.content{
+    background-color: brown;
+    height: 2rem;
+    color: #fff;
+}
+/*
+
+container
+
+*/
+
+.container {
+    width: 100%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 54rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 72rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 96rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 114rem;
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        width: 137rem;
+    }
+}
