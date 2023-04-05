@@ -3,6 +3,7 @@
     --white: #fff;
     --grey: #D2D2D2;
     --dark: #3b3735;
+    --app-bg: #FAF4F2;
     --primary-font: "Roboto", Arial, Helvetica, sans-serif;
     --primary-font-md: "Roboto Medium", Arial, Helvetica, sans-serif;
     --secondary-font: "Archivo Black", Arial, Helvetica, sans-serif;
@@ -25,6 +26,7 @@ body {
     font-size: 1.6rem;
     line-height: 1.6;
     font-family: var(--primary-font);
+    background-color: var(--app-bg)
 }
 
 /*
@@ -204,14 +206,14 @@ a {
     left: 0rem;
 }
 
-.nav-menu__title{
-color: var(--white);
-font-size: 2rem;
-font-family:  var(--secondary-font);
-border-bottom: 1px solid var(--white);
-padding-bottom: 1rem;
-margin-bottom: 2rem;
-text-align: center;
+.nav-menu__title {
+    color: var(--white);
+    font-size: 2rem;
+    font-family: var(--secondary-font);
+    border-bottom: 1px solid var(--white);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 
@@ -227,6 +229,7 @@ text-align: center;
 
 .mobile-menu {
     margin-bottom: 3rem;
+
 }
 
 .mobile-menu__item {
@@ -313,10 +316,11 @@ text-align: center;
 
 }
 
-.nav-menu__link:hover{
-background: var(--white);
-color: var(--dark);
+.nav-menu__link:hover {
+    background: var(--white);
+    color: var(--dark);
 }
+
 .nav-menu__link--border {}
 
 /* 
@@ -332,7 +336,7 @@ color: var(--dark);
 
 .nav__link {
     color: var(--white);
-    font-family:  var(--primary-font-md);
+    font-family: var(--primary-font-md);
     margin-left: 1.5rem;
 }
 
@@ -439,3 +443,62 @@ color: var(--dark);
     background-color: var(--orange);
 
 }
+
+
+/*
+
+--main--
+
+*/
+
+
+.main {
+    padding: 4rem 0;
+}
+
+
+/* 
+============================
+        services
+============================
+ */
+
+.services {
+    margin-top: -22rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+.service {
+    background-color: var(--white);
+    width: 30rem;
+    height: 26rem;
+    border-radius: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4rem;
+    margin-bottom: 2rem;
+    color: var(--dark);
+    flex-grow: 1;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    /* gap: 2rem; */
+
+}
+
+.service__img {
+    display: block;
+}
+
+.service__title {
+    font-family: var(--secondary-font);
+    font-size: 1.8rem;
+    margin: 1.5rem 0 0.6rem 0;
+}
+
+.service__caption {}
