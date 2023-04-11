@@ -16,6 +16,7 @@ html {
     box-sizing: border-box;
     /* font-size: 10px; */
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -85,7 +86,7 @@ a {
     background: linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5)), url("../images/header-bg.jpg");
     background-position: center;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 95.5rem;
     border-bottom-left-radius: 10rem;
     border-bottom-right-radius: 10rem;
 }
@@ -423,7 +424,7 @@ a {
 .header-content {
     text-align: center;
     color: var(--white);
-    margin-top: 10rem;
+    margin-top: 24rem;
 }
 
 .header-content__title {
@@ -465,7 +466,7 @@ a {
  */
 
 .services {
-    margin-top: -15rem;
+    margin-top: -19rem;
     display: flex;
     flex-wrap: wrap;
     margin-left: -1rem;
@@ -684,7 +685,7 @@ a {
     height: 8rem;
     padding: 0 1.5rem;
     border-radius: 2rem;
-    margin-top:2rem;
+    margin-top: 2rem;
 }
 
 .newsletter__form {
@@ -729,4 +730,120 @@ a {
 
 .newsletter__img {
     width: 100%;
+}
+
+/*
+
+-- Footer --
+
+*/
+
+.footer {
+    background-color: var(--secondary-color);
+    border-top-left-radius: 10rem;
+    border-top-right-radius: 10rem;
+    color: var(--dark);
+    padding-bottom: 4rem;
+}
+
+.footer>.container {
+    padding-top: 10rem;
+}
+
+.footer__title {
+    font-family: var(--secondary-font);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.footer__scroll {
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    position: absolute;
+    right: 0;
+    top: -2rem;
+    left: 0;
+    margin: 0 auto;
+}
+
+.footer__wrapper {
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+
+/* 
+
+============================
+        Footer Left
+============================
+
+ */
+.footer__left {
+    max-width: 62rem;
+    /* flex-basis: 48%; */
+}
+
+.footer_content {
+    margin-bottom: 2rem;
+}
+
+.footer-content__description {}
+
+.footer-app {
+    display: none;
+}
+
+.footer__title {}
+
+.footer-app__link {}
+
+.footer-app__img {}
+
+/* 
+
+============================
+        Footer Right
+============================
+
+ */
+
+.footer__right {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.footer-list {
+    width: 16rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer__title {}
+
+.footer-pages {}
+
+.footer-pages__item {}
+
+.footer-pages__link {
+    color: var(--dark);
+}
+
+.footer-pages__link:hover {
+    text-decoration: underline;
+}
+
+.footer-app--mobile {
+    display: block;
+}
+
+.footer__copy-right {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 2rem;
 }
