@@ -1,6 +1,14 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
 @media (max-width: 380px) {
     .header-content__title {
-        font-size: 4rem;
+        font-size: xx-large;
     }
 
     .destinations__title {
@@ -11,21 +19,81 @@
         max-width: 16rem;
 
     }
-    .footer{
+
+    .footer {
         text-align: center;
     }
-    .footer__right{
+
+    .footer__right {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
-    .footer-list{
+
+    .footer-list {
         margin-left: 0;
         width: 100%;
     }
+
+    .header-content {
+        margin-top: 10rem;
+
+    }
+
+    .services {
+        margin-top: -17rem;
+    }
+
+    .header-content__caption {
+        font-size: 1.5rem;
+    }
+
+    .newsletter::before {
+        top: 15rem;
+        left: -23rem;
+    }
 }
 
-@media (min-width: 576px) {}
+
+
+@media (min-width: 380px) {
+    .header-content {
+        margin-top: 10rem;
+
+    }
+
+    .header-content__title {
+        font-size: 4rem;
+    }
+
+    .header-content__caption {
+        font-size: 1.6rem;
+    }
+
+    .services {
+        margin-top: -16rem;
+    }
+}
+
+
+
+@media (min-width: 576px) {
+    .container {
+        width: 54rem;
+    }
+
+    .header-content__caption {
+        font-size: 1.6rem;
+    }
+}
+
+
+
 
 @media (min-width: 768px) {
+    .container {
+        width: 72rem;
+    }
 
     .nav__btn,
     .nav-menu {
@@ -33,27 +101,50 @@
     }
 
     .menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
     .newsletter {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
         text-align: left;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
     .newsletter__content {
+        -ms-flex-preferred-size: 60%;
         flex-basis: 60%;
         padding-right: 2rem;
     }
 
     .newsletter__banner {
+        -ms-flex-preferred-size: 40%;
         flex-basis: 40%;
     }
 
+    .newsletter::before {
+        width: auto;
+        height: auto;
+        top: -7rem;
+        left: -55.5rem;
+        background-size: auto;
+        background-position: center left;
+    }
 }
 
+
+
 @media (min-width: 992px) {
+    .container {
+        width: 96rem;
+    }
+
     .nav__links {
         display: block;
     }
@@ -83,6 +174,8 @@
     }
 
     .footer__wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
@@ -93,37 +186,88 @@
     .footer__scroll {
         left: auto;
     }
+
+    .newsletter::before {
+        top: -12rem;
+        left: -42rem;
+    }
 }
 
+
+
 @media (min-width: 1200px) {
+    .container {
+        width: 114rem;
+    }
+
+    .header {
+        min-height: 80rem;
+    }
+
+    .header-content {
+        margin-top: 13rem;
+
+    }
+
+    .header-content__title {
+        font-size: 4.5rem;
+    }
+
     .newsletter {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         padding: 6rem;
     }
 
     .newsletter__content {
+        -ms-flex-preferred-size: auto;
         flex-basis: auto;
         width: 60rem;
     }
 
     .newsletter__banner {
+        -ms-flex-preferred-size: auto;
         flex-basis: auto;
         width: 42rem;
     }
 
     .footer__wrapper {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
 
     }
-    .footer-list{
+
+    .footer-list {
         margin-bottom: 0;
         margin-left: 2rem;
     }
+
+    .newsletter::before {
+        top: -15rem;
+        left: -31.5rem;
+    }
 }
 
+
+
 @media (min-width: 1400px) {
+    .container {
+        width: 132rem;
+    }
+
     .newsletter {
         padding: 3rem 6rem;
     }
 
+    .services {
+        margin-top: -13rem;
+
+    }
+
+    .newsletter::before {
+        top: -15rem;
+        left: -20rem;
+    }
 }
